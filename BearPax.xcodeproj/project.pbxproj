@@ -22,7 +22,6 @@
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
 		90C8DED11E971EAF00FEBF18 /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
-		90C8DED61E971EFA00FEBF18 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED51E971EFA00FEBF18 /* ForumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		90C8DED51E971EFA00FEBF18 /* ForumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */,
-				90C8DED51E971EFA00FEBF18 /* ForumViewController.swift */,
 			);
 			name = Forum;
 			sourceTree = "<group>";
@@ -333,7 +330,6 @@
 				90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */,
 				900EF96C1E96B006005BEE34 /* ViewController.swift in Sources */,
 				90C8DED11E971EAF00FEBF18 /* MapTableViewController.swift in Sources */,
-				90C8DED61E971EFA00FEBF18 /* ForumViewController.swift in Sources */,
 				90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */,
 				900EF9A21E96CEC9005BEE34 /* SignInViewController.swift in Sources */,
 				900EF9A41E96CEE0005BEE34 /* DataViewController.swift in Sources */,
