@@ -68,7 +68,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hdH-Gd-1jP" kind="show" id="T0R-wc-gY0"/>
+                                    <action selector="attemptLogin:" destination="LpE-gE-Vt3" eventType="touchUpInside" id="Bng-Ou-YHR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqc-ZP-bIH">
@@ -82,8 +82,9 @@
                         <color key="backgroundColor" red="0.64980372291740807" green="0.83240114956458633" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="emailField" destination="G1q-DS-LKq" id="dPd-sn-vji"/>
-                        <outlet property="passwordField" destination="NkM-Pn-OKr" id="mwd-UZ-Yxs"/>
+                        <outlet property="emailField" destination="G1q-DS-LKq" id="gIf-Er-VEs"/>
+                        <outlet property="passwordField" destination="G1q-DS-LKq" id="i7K-E4-eQn"/>
+                        <segue destination="hdH-Gd-1jP" kind="show" identifier="loginToMain" id="fAC-bz-BzK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bl1-my-T4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -674,8 +675,8 @@
         <image name="Map" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N8w-Wp-r3c"/>
-        <segue reference="6I2-gf-V87"/>
+        <segue reference="fAC-bz-BzK"/>
+        <segue reference="Zqn-GB-IMu"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
