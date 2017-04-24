@@ -1,0 +1,6 @@
+framework module Pods_BearPax {
+  umbrella header "Pods-BearPax-umbrella.h"
+
+  export *
+  module * { export * }
+}

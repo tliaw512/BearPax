@@ -23,7 +23,7 @@
 		900EF9A61E96CEEB005BEE34 /* DiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */; };
 		9046A0701EAE7D2E00FD3CE0 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A06F1EAE7D2E00FD3CE0 /* ProfilePictureViewController.swift */; };
 		9046A0721EAE7E9B00FD3CE0 /* ProfilePictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0711EAE7E9B00FD3CE0 /* ProfilePictureCollectionViewCell.swift */; };
-		9046A0B01EAE8F3800FD3CE0 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = 9046A0AF1EAE8F3800FD3CE0 /* GoogleService-Info (2).plist */; };
+		9046A0B21EAE93E600FD3CE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
 		90C8DED11E971EAF00FEBF18 /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
@@ -75,7 +75,7 @@
 		900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisViewController.swift; sourceTree = "<group>"; };
 		9046A06F1EAE7D2E00FD3CE0 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
 		9046A0711EAE7E9B00FD3CE0 /* ProfilePictureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureCollectionViewCell.swift; sourceTree = "<group>"; };
-		9046A0AF1EAE8F3800FD3CE0 /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (2).plist"; path = "../../../../Downloads/GoogleService-Info (2).plist"; sourceTree = "<group>"; };
+		9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 				900EF9731E96B006005BEE34 /* Assets.xcassets */,
 				900EF9751E96B006005BEE34 /* LaunchScreen.storyboard */,
 				900EF9781E96B006005BEE34 /* Info.plist */,
-				9046A0AF1EAE8F3800FD3CE0 /* GoogleService-Info (2).plist */,
+				9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */,
 				900EF9701E96B006005BEE34 /* BearPax.xcdatamodeld */,
 			);
 			path = BearPax;
@@ -355,8 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9046A0B01EAE8F3800FD3CE0 /* GoogleService-Info (2).plist in Resources */,
 				900EF9771E96B006005BEE34 /* LaunchScreen.storyboard in Resources */,
+				9046A0B21EAE93E600FD3CE0 /* GoogleService-Info.plist in Resources */,
 				900EF9741E96B006005BEE34 /* Assets.xcassets in Resources */,
 				900EF96F1E96B006005BEE34 /* Main.storyboard in Resources */,
 			);
