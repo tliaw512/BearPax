@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LpE-gE-Vt3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LpE-gE-Vt3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="A8k-BU-QXP">
             <objects>
-                <viewController id="LpE-gE-Vt3" userLabel="Login View Controller" sceneMemberID="viewController">
+                <viewController id="LpE-gE-Vt3" userLabel="Login View Controller" customClass="LogInViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4KJ-bT-rtI"/>
                         <viewControllerLayoutGuide type="bottom" id="DJ5-jz-rT3"/>
@@ -81,6 +81,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.64980372291740807" green="0.83240114956458633" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="G1q-DS-LKq" id="dPd-sn-vji"/>
+                        <outlet property="passwordField" destination="NkM-Pn-OKr" id="mwd-UZ-Yxs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bl1-my-T4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,7 +93,7 @@
         <!--Sign Up-->
         <scene sceneID="nPf-dN-NLO">
             <objects>
-                <viewController id="hgm-16-wbb" userLabel="Sign Up" sceneMemberID="viewController">
+                <viewController id="hgm-16-wbb" userLabel="Sign Up" customClass="SignInViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DiP-64-C8P"/>
                         <viewControllerLayoutGuide type="bottom" id="lin-mH-8Sc"/>
@@ -128,6 +132,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="attemptSignUp:" destination="hgm-16-wbb" eventType="touchUpInside" id="YKh-w6-8sb"/>
                                     <segue destination="hdH-Gd-1jP" kind="show" id="N8w-Wp-r3c"/>
                                 </connections>
                             </button>
@@ -176,19 +181,24 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G38-Na-qxw">
-                                <rect key="frame" x="101" y="416" width="173" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7c2-Uy-twK">
+                                <rect key="frame" x="125" y="416" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick Your Profile Picture">
+                                <state key="normal" title="Pick Profile Picture">
                                     <color key="titleColor" red="0.20760328519999999" green="0.3262996755" blue="0.78245954949999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="27o-Pk-gfL" kind="show" id="QlF-Zy-ygf"/>
+                                    <segue destination="27o-Pk-gfL" kind="show" id="2q4-GB-6a2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.64980372289999999" green="0.8324011496" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="xxO-hE-HwF" id="TyZ-Ha-wpX"/>
+                        <outlet property="passwordField" destination="Mvg-fi-kF2" id="Pkm-SA-T1V"/>
+                        <outlet property="userNameField" destination="AFw-8n-q5f" id="YXd-rU-4nc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yho-Am-XHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,10 +220,10 @@
             </objects>
             <point key="canvasLocation" x="-4290" y="1245"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Picture-->
         <scene sceneID="hrm-1h-BzJ">
             <objects>
-                <viewController id="6Io-8V-hkS" sceneMemberID="viewController">
+                <viewController id="6Io-8V-hkS" userLabel="Profile Picture" customClass="ProfilePictureViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DwS-qN-NXe"/>
                         <viewControllerLayoutGuide type="bottom" id="unb-iQ-dx3"/>
@@ -233,7 +243,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DsB-Ch-Gxj">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfilePictureCollectionViewCell" id="DsB-Ch-Gxj" customClass="ProfilePictureCollectionViewCell" customModule="BearPax" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -246,6 +256,9 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="profilePicture" destination="zM5-DZ-kD8" id="Dhj-6m-e3G"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -254,7 +267,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="YJX-xz-NFJ"/>
                     <connections>
-                        <segue destination="hgm-16-wbb" kind="show" id="6I2-gf-V87"/>
+                        <outlet property="ProfileCollectionView" destination="yv3-YI-5U7" id="7ZW-dG-eO2"/>
+                        <segue destination="hgm-16-wbb" kind="show" identifier="ProfileToSign" id="6I2-gf-V87"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcL-Ed-YpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -282,7 +296,7 @@
         <!--Data-->
         <scene sceneID="eg5-R7-8qI">
             <objects>
-                <viewController id="Kop-zc-gN9" userLabel="Data" sceneMemberID="viewController">
+                <viewController id="Kop-zc-gN9" userLabel="Data" customClass="DataViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XI3-Zn-Nf4"/>
                         <viewControllerLayoutGuide type="bottom" id="SYs-ND-Xw8"/>
@@ -371,7 +385,7 @@
         <!--Diagnosis-->
         <scene sceneID="GT9-nH-Pe2">
             <objects>
-                <viewController id="2sy-tX-EV8" userLabel="Diagnosis" sceneMemberID="viewController">
+                <viewController id="2sy-tX-EV8" userLabel="Diagnosis" customClass="DiagnosisViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mfy-Lf-0U2"/>
                         <viewControllerLayoutGuide type="bottom" id="nZz-pP-efF"/>
@@ -453,7 +467,7 @@
         <!--Forum Selector-->
         <scene sceneID="EZ7-ZI-oQi">
             <objects>
-                <viewController id="pta-JB-fIb" userLabel="Forum Selector" sceneMemberID="viewController">
+                <viewController id="pta-JB-fIb" userLabel="Forum Selector" customClass="ForumCollectionViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sT0-nw-Ygr"/>
                         <viewControllerLayoutGuide type="bottom" id="o3B-Ax-B6J"/>
@@ -543,7 +557,7 @@
         <!--Map Selector-->
         <scene sceneID="SBl-hj-Hc3">
             <objects>
-                <viewController id="jbB-t7-9uq" userLabel="Map Selector" sceneMemberID="viewController">
+                <viewController id="jbB-t7-9uq" userLabel="Map Selector" customClass="MapTableViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LWp-eR-9yK"/>
                         <viewControllerLayoutGuide type="bottom" id="i4O-6v-Erq"/>
@@ -585,6 +599,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3fA-cy-woR"/>
                     <connections>
+                        <outlet property="MapTable" destination="RnD-I3-eqx" id="h8S-XI-f99"/>
                         <segue destination="ukL-tk-b7x" kind="show" id="KjF-xM-5Vg"/>
                     </connections>
                 </viewController>
@@ -595,7 +610,7 @@
         <!--Map-->
         <scene sceneID="7xW-aP-76H">
             <objects>
-                <viewController id="ukL-tk-b7x" userLabel="Map" sceneMemberID="viewController">
+                <viewController id="ukL-tk-b7x" userLabel="Map" customClass="MapViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OzG-Lw-bav"/>
                         <viewControllerLayoutGuide type="bottom" id="WPL-Xa-7dP"/>
@@ -659,8 +674,8 @@
         <image name="Map" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6I2-gf-V87"/>
         <segue reference="N8w-Wp-r3c"/>
+        <segue reference="6I2-gf-V87"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

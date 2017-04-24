@@ -20,6 +20,7 @@ class MapTableViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var MapTable: UITableView!
     
 
     /*
