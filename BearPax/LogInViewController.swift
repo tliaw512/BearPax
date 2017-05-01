@@ -40,6 +40,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         FIRAuth.auth()?.signIn(withEmail: emailText, password: passwordText)
         {(user, error) in
             if let error = error {
+                  print(error)
                 let alertController = UIAlertController(title: "Log In Failed", message: error as? String, preferredStyle: . alert)
                 let failAction = UIAlertAction(title: "Try Again", style: .default, handler: nil)
                 alertController.addAction(failAction)

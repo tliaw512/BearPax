@@ -15,6 +15,7 @@ target 'BearPax' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
+pod 'Charts'
 
 
   target 'BearPaxTests' do

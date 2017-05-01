@@ -18,6 +18,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
     var resultSearchController:UISearchController? = nil
     
+    // When segmented control changes, update locations
     @IBAction func searchOnValueChanged(_ sender: Any) {
         mapView.removeAnnotations(mapView.annotations)
         searchInMap()
@@ -32,9 +33,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         // Permission to use location feature
         locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()
+        
+        // Search for specific locations in map
         searchInMap()
+        
+        
     }
     
+
+    // Search function for finding specific locations in map
     func searchInMap() {
         let request = MKLocalSearchRequest()
         request.naturalLanguageQuery = segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex)
@@ -44,13 +51,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         let search = MKLocalSearch(request: request)
         search.start { (response: MKLocalSearchResponse?, error: Error?) in
-            for item in response?.mapItems as! [MKMapItem] {
+            for item in (response?.mapItems)! {
                 self.addPinToMapView(title: item.name!, latitude: (item.placemark.location?.coordinate.latitude)!, longitude: (item.placemark.location?.coordinate.longitude)!)
             }
             
         }
     }
     
+    
+    // Function to add annotation to map
     func addPinToMapView(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let annotation = Annotations(coordinate: location, title: title)

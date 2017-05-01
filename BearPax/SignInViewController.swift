@@ -43,7 +43,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
                     changeRequest.displayName = name
                     changeRequest.commitChanges(completion: {(err) in
                         if let err = err {
-                            let alert = UIAlertController(title: "Sign Up Faileds!", message: err as? String, preferredStyle: .alert)
+                            let alert = UIAlertController(title: "Sign Up Failed!", message: err as? String, preferredStyle: .alert)
                             alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
                         } else {
