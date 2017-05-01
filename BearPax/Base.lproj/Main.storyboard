@@ -457,7 +457,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.20760328519999999" green="0.3262996755" blue="0.78245954949999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="ukL-tk-b7x" kind="relationship" relationship="rootViewController" id="Amz-G3-SDC"/>
@@ -480,20 +483,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtK-v6-ZvV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n6z-1e-qzh">
+                                <rect key="frame" x="36" y="582" width="303" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Hospitals"/>
+                                    <segment title="Alcoholics Anonymous"/>
+                                </segments>
+                                <connections>
+                                    <action selector="searchOnValueChanged:" destination="ukL-tk-b7x" eventType="valueChanged" id="OMb-qi-k75"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4UH-8c-0Nl"/>
+                    <navigationItem key="navigationItem" title="Nearest Hospital or AA Meeting" id="4UH-8c-0Nl"/>
                     <connections>
                         <outlet property="mapView" destination="XtK-v6-ZvV" id="a5q-Vc-IJG"/>
+                        <outlet property="segmentedControl" destination="n6z-1e-qzh" id="6EA-ux-pmz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GY-bB-CEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794" y="1232"/>
+            <point key="canvasLocation" x="-794.39999999999998" y="1231.9340329835084"/>
         </scene>
         <!--Update Settings-->
         <scene sceneID="pMU-G5-QuL">
