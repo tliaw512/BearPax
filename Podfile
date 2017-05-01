@@ -12,6 +12,11 @@ target 'BearPax' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Storage'
 
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
+
+
   target 'BearPaxTests' do
     inherit! :search_paths
     # Pods for testing

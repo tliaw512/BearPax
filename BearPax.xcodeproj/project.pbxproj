@@ -23,9 +23,7 @@
 		900EF9A61E96CEEB005BEE34 /* DiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */; };
 		9046A0B21EAE93E600FD3CE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */; };
 		9046A0B41EB7110F00FD3CE0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0B31EB7110F00FD3CE0 /* TabBarViewController.swift */; };
-		9046A0B71EB719A000FD3CE0 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0B61EB719A000FD3CE0 /* MapTableViewCell.swift */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
-		90C8DED11E971EAF00FEBF18 /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
 		AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */; };
 /* End PBXBuildFile section */
@@ -75,9 +73,7 @@
 		900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisViewController.swift; sourceTree = "<group>"; };
 		9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9046A0B31EB7110F00FD3CE0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
-		9046A0B61EB719A000FD3CE0 /* MapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
-		90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF934F09D00C6B4228A48EE8 /* Pods-BearPaxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BearPaxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BearPaxUITests/Pods-BearPaxUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,9 +214,7 @@
 		900EF99E1E96CE65005BEE34 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */,
 				90C8DED21E971EE200FEBF18 /* MapViewController.swift */,
-				9046A0B61EB719A000FD3CE0 /* MapTableViewCell.swift */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -531,12 +525,10 @@
 			files = (
 				900EF9A01E96CEB2005BEE34 /* LogInViewController.swift in Sources */,
 				900EF9A61E96CEEB005BEE34 /* DiagnosisViewController.swift in Sources */,
-				9046A0B71EB719A000FD3CE0 /* MapTableViewCell.swift in Sources */,
 				9046A0B41EB7110F00FD3CE0 /* TabBarViewController.swift in Sources */,
 				900EF9721E96B006005BEE34 /* BearPax.xcdatamodeld in Sources */,
 				90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */,
 				900EF96C1E96B006005BEE34 /* ViewController.swift in Sources */,
-				90C8DED11E971EAF00FEBF18 /* MapTableViewController.swift in Sources */,
 				90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */,
 				900EF9A21E96CEC9005BEE34 /* SignInViewController.swift in Sources */,
 				900EF9A41E96CEE0005BEE34 /* DataViewController.swift in Sources */,

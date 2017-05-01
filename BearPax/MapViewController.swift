@@ -17,7 +17,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Zoom in on user's location initially
         mapView?.showsUserLocation = true
+        mapView.setUserTrackingMode(.follow, animated: true)
+        
+        // Permission to use location feature
         locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()
         
