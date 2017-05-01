@@ -19,5 +19,4 @@ class Annotations: NSObject, MKAnnotation {
         self.title = title
     }
     
-    
 }

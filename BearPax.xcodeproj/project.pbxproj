@@ -25,6 +25,7 @@
 		9046A0BF1EB739D500FD3CE0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0BE1EB739D500FD3CE0 /* MapKit.framework */; };
 		9046A0C11EB73EAA00FD3CE0 /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0C01EB73EAA00FD3CE0 /* Annotations.swift */; };
 		9046A0C31EB7DEEC00FD3CE0 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0C21EB7DEEC00FD3CE0 /* GraphViewController.swift */; };
+		9046A0C51EB7F4B300FD3CE0 /* liverData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9046A0C41EB7F4B300FD3CE0 /* liverData.json */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
 		AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */; };
@@ -77,6 +78,7 @@
 		9046A0BE1EB739D500FD3CE0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9046A0C01EB73EAA00FD3CE0 /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
 		9046A0C21EB7DEEC00FD3CE0 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		9046A0C41EB7F4B300FD3CE0 /* liverData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = liverData.json; sourceTree = "<group>"; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 				900EF9781E96B006005BEE34 /* Info.plist */,
 				9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */,
 				900EF9701E96B006005BEE34 /* BearPax.xcdatamodeld */,
+				9046A0C41EB7F4B300FD3CE0 /* liverData.json */,
 			);
 			path = BearPax;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			files = (
 				900EF9771E96B006005BEE34 /* LaunchScreen.storyboard in Resources */,
 				9046A0B21EAE93E600FD3CE0 /* GoogleService-Info.plist in Resources */,
+				9046A0C51EB7F4B300FD3CE0 /* liverData.json in Resources */,
 				900EF9741E96B006005BEE34 /* Assets.xcassets in Resources */,
 				900EF96F1E96B006005BEE34 /* Main.storyboard in Resources */,
 			);
