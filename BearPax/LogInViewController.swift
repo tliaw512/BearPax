@@ -29,7 +29,6 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
@@ -41,7 +40,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         FIRAuth.auth()?.signIn(withEmail: emailText, password: passwordText)
         {(user, error) in
             if let error = error {
-                let alertController = UIAlertController(title: "Log In Failed", message: "Username or password entered incorrectly", preferredStyle: . alert)
+                let alertController = UIAlertController(title: "Log In Failed", message: error as? String, preferredStyle: . alert)
                 let failAction = UIAlertAction(title: "Try Again", style: .default, handler: nil)
                 alertController.addAction(failAction)
                 self.present(alertController, animated: true, completion: nil)

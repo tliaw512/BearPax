@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
 
@@ -19,7 +20,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBOutlet weak var userNameField: UITextField!
@@ -27,8 +27,33 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     
     @IBAction func attemptSignUp(_ sender: UIButton) {
+        guard let email = emailField.text else { return }
+        guard let password = passwordField.text else { return }
+        guard let name = userNameField.text else { return }
         
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion:
+            { (user, error) in
+                if let error = error {
+                    let alertController = UIAlertController(title: "Sign Up Failed", message: error as? String, preferredStyle: .alert)
+                    let failAction = UIAlertAction(title: "Try Again", style: .default, handler: nil)
+                    alertController.addAction(failAction)
+                    self.present(alertController, animated: true, completion: nil)
+                } else {
+                    let changeRequest = user!.profileChangeRequest()
+                    changeRequest.displayName = name
+                    changeRequest.commitChanges(completion: {(err) in
+                        if let err = err {
+                            let alert = UIAlertController(title: "Sign Up Faileds!", message: err as? String, preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        } else {
+                            self.performSegue(withIdentifier: "signupToMain", sender: self)
+                        }
+                    })
+                }
+        })
     }
+
     
     
 

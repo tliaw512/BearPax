@@ -21,8 +21,6 @@
 		900EF9A21E96CEC9005BEE34 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9A11E96CEC9005BEE34 /* SignInViewController.swift */; };
 		900EF9A41E96CEE0005BEE34 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9A31E96CEE0005BEE34 /* DataViewController.swift */; };
 		900EF9A61E96CEEB005BEE34 /* DiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */; };
-		9046A0701EAE7D2E00FD3CE0 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A06F1EAE7D2E00FD3CE0 /* ProfilePictureViewController.swift */; };
-		9046A0721EAE7E9B00FD3CE0 /* ProfilePictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0711EAE7E9B00FD3CE0 /* ProfilePictureCollectionViewCell.swift */; };
 		9046A0B21EAE93E600FD3CE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
 		90C8DED11E971EAF00FEBF18 /* MapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */; };
@@ -73,8 +71,6 @@
 		900EF9A11E96CEC9005BEE34 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		900EF9A31E96CEE0005BEE34 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisViewController.swift; sourceTree = "<group>"; };
-		9046A06F1EAE7D2E00FD3CE0 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
-		9046A0711EAE7E9B00FD3CE0 /* ProfilePictureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePictureCollectionViewCell.swift; sourceTree = "<group>"; };
 		9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED01E971EAF00FEBF18 /* MapTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewController.swift; sourceTree = "<group>"; };
@@ -146,8 +142,8 @@
 		900EF9681E96B006005BEE34 /* BearPax */ = {
 			isa = PBXGroup;
 			children = (
-				900EF99A1E96CE13005BEE34 /* Auth */,
 				900EF99B1E96CE46005BEE34 /* Data */,
+				900EF99A1E96CE13005BEE34 /* Auth */,
 				900EF99C1E96CE4F005BEE34 /* Diagnosis */,
 				900EF99D1E96CE5B005BEE34 /* Forum */,
 				900EF99E1E96CE65005BEE34 /* Map */,
@@ -186,8 +182,6 @@
 			children = (
 				900EF99F1E96CEB2005BEE34 /* LogInViewController.swift */,
 				900EF9A11E96CEC9005BEE34 /* SignInViewController.swift */,
-				9046A06F1EAE7D2E00FD3CE0 /* ProfilePictureViewController.swift */,
-				9046A0711EAE7E9B00FD3CE0 /* ProfilePictureCollectionViewCell.swift */,
 			);
 			name = Auth;
 			sourceTree = "<group>";
@@ -523,10 +517,8 @@
 			files = (
 				900EF9A01E96CEB2005BEE34 /* LogInViewController.swift in Sources */,
 				900EF9A61E96CEEB005BEE34 /* DiagnosisViewController.swift in Sources */,
-				9046A0701EAE7D2E00FD3CE0 /* ProfilePictureViewController.swift in Sources */,
 				900EF9721E96B006005BEE34 /* BearPax.xcdatamodeld in Sources */,
 				90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */,
-				9046A0721EAE7E9B00FD3CE0 /* ProfilePictureCollectionViewCell.swift in Sources */,
 				900EF96C1E96B006005BEE34 /* ViewController.swift in Sources */,
 				90C8DED11E971EAF00FEBF18 /* MapTableViewController.swift in Sources */,
 				90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */,
