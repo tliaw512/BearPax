@@ -24,6 +24,7 @@
 		9046A0B41EB7110F00FD3CE0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0B31EB7110F00FD3CE0 /* TabBarViewController.swift */; };
 		9046A0BF1EB739D500FD3CE0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0BE1EB739D500FD3CE0 /* MapKit.framework */; };
 		9046A0C11EB73EAA00FD3CE0 /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0C01EB73EAA00FD3CE0 /* Annotations.swift */; };
+		9046A0C31EB7DEEC00FD3CE0 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0C21EB7DEEC00FD3CE0 /* GraphViewController.swift */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
 		AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */; };
@@ -75,6 +76,7 @@
 		9046A0B31EB7110F00FD3CE0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
 		9046A0BE1EB739D500FD3CE0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9046A0C01EB73EAA00FD3CE0 /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
+		9046A0C21EB7DEEC00FD3CE0 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				900EF9A31E96CEE0005BEE34 /* DataViewController.swift */,
+				9046A0C21EB7DEEC00FD3CE0 /* GraphViewController.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */,
 				90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */,
 				900EF9A21E96CEC9005BEE34 /* SignInViewController.swift in Sources */,
+				9046A0C31EB7DEEC00FD3CE0 /* GraphViewController.swift in Sources */,
 				900EF9A41E96CEE0005BEE34 /* DataViewController.swift in Sources */,
 				900EF96A1E96B006005BEE34 /* AppDelegate.swift in Sources */,
 			);
