@@ -15,6 +15,7 @@ class GraphViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if let person = person {
             dataLabel.text = String(person.Hour5)
         }

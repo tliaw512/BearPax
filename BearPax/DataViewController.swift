@@ -35,7 +35,8 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DataTableViewCell", for: indexPath) as! DataTableViewCell
         let person: PeopleData! = dataArray![indexPath.row]
-        cell.textLabel?.text = person.type
+        cell.typeLabel?.text = person.type
+        cell.dataLabel?.text = String(person.Hour5)
         return cell
     }
 
