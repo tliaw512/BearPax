@@ -4,21 +4,21 @@
 		"AST": "20",
 		"ALT": "15",
 		"Albumin": "3",
-		"Biliruben": "2"
+		"Bilirubin": "2"
 	},
 	"Person 2": {
 		"BAC": "063",
 		"AST": "20",
 		"ALT": "15",
 		"Albumin": "3",
-		"Biliruben": "2"
+		"Bilirubin": "2"
 	},
 	"Person 3": {
 		"BAC": "063",
 		"AST": "20",
 		"ALT": "15",
 		"Albumin": "3",
-		"Biliruben": "2"
+		"Bilirubin": "2"
 	},
 	
 	"Person 4": {
@@ -26,6 +26,6 @@
 		"AST": "20",
 		"ALT": "15",
 		"Albumin": "3",
-		"Biliruben": "2"
+		"Bilirubin": "2"
 	}
 }

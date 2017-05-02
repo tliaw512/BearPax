@@ -9,11 +9,16 @@
 import UIKit
 
 class DiagnosisViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let BAC = data["BAC"]
+        let AST = data["AST"]
+        let ALT = data["ALT"]
+        let Alb = data["Albumin"]
+        let Bil = data["Bilirubin"]
     }
 
     override func didReceiveMemoryWarning() {
