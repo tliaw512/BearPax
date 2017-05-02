@@ -5,38 +5,38 @@
 		"Hour3": "0.14",
 		"Hour4": "0.32",
 		"Hour5": "0.33",
-        "Description": "Blood alcohol content indicates the amount of ethyl alcohol dissolved in your blood. Your blood alcohol level depends upon the rate and amount of alcohol you've consumed, as well as your size and weight, your overall health, whether you've eaten recently, and the percentage of alcohol in your drunks"
+        "Description": "    Blood alcohol content indicates the amount of ethyl alcohol dissolved in your blood. Your blood alcohol level depends upon the rate and amount of alcohol you've consumed, as well as your size and weight, your overall health, whether you've eaten recently, and the percentage of alcohol in your drunks"
 	},
 	"AST": {
-		"Hour1": "0.1",
+		"Hour1": "10",
 		"Hour2": "10",
 		"Hour3": "15",
-		"Hour4": "0",
-		"Hour5": ".1",
-        "Description": "AST (aspartate aminotransferase) is an enzyme commonly found in low levels in the blood. When the liver is damaged, additional AST is released into the bloodstream and is directly related to the extent of tissue damage. Detecting AST can help identify specific liver disease, check the effect of medication and determine success of treatment for the liver."
+		"Hour4": "80",
+		"Hour5": "93",
+        "Description": "    AST (aspartate aminotransferase) is an enzyme commonly found in low levels in the blood. When the liver is damaged, additional AST is released into the bloodstream and is directly related to the extent of tissue damage. Detecting AST can help identify specific liver disease, check the effect of medication and determine success of treatment for the liver."
 	},
 	"ALT": {
-		"Hour1": "0.15",
-		"Hour2": "10",
-		"Hour3": "15",
-		"Hour4": "0",
-		"Hour5": "0",
-        "Description": "ALT (alanine aminotransferase) is an enzyme commonly found in low levels in the blood. Increases in ALT levels indicates liver damage. Detecting ALT levels can help identify specific liver disease and track amount of liver damage."
+		"Hour1": "20",
+		"Hour2": "20",
+		"Hour3": "20",
+		"Hour4": "132",
+		"Hour5": "140",
+        "Description": "    ALT (alanine aminotransferase) is an enzyme commonly found in low levels in the blood. Increases in ALT levels indicates liver damage. Detecting ALT levels can help identify specific liver disease and track amount of liver damage."
 	},
 	"Albumin": {
-		"Hour1": "0.32",
-		"Hour2": "132",
-		"Hour3": "100",
-		"Hour4": "0",
-		"Hour5": "0",
-        "Description": "Albumin is a protein made by the liver. Detecting albumin levels can help determine liver disease. Low levels often indicate signs of liver disease. In cases of cirrhosis, albumin levels may be normal. "
+		"Hour1": "30",
+		"Hour2": "30",
+		"Hour3": "30",
+		"Hour4": "30",
+		"Hour5": "30",
+        "Description": "    Albumin is a protein made by the liver. Detecting albumin levels can help determine liver disease. Low levels often indicate signs of liver disease. In cases of cirrhosis, albumin levels may be normal. "
 	},
     "Bilirubin": {
-        "Hour1": "0.44",
-        "Hour2": "150",
-        "Hour3": "118",
+        "Hour1": "0",
+        "Hour2": "0",
+        "Hour3": "8",
         "Hour4": "0",
         "Hour5": "0",
-        "Description": "Bilirubin is a substance found in bile and is produced when the liver breaks down old red blood cells. When bilirubin levels are high, this often indicates signs of liver disease, especially in cases of hepatitis and cirrhosis."
+        "Description": "    Bilirubin is a substance found in bile and is produced when the liver breaks down old red blood cells. When bilirubin levels are high, this often indicates signs of liver disease, especially in cases of hepatitis and cirrhosis."
     }
 }
