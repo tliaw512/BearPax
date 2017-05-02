@@ -262,7 +262,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Cc4-2Y-OFm"/>
-                    <navigationItem key="navigationItem" title="Data" id="dFU-6j-odP"/>
+                    <navigationItem key="navigationItem" title="Your Readings" id="dFU-6j-odP"/>
                     <connections>
                         <outlet property="tableView" destination="1F0-0c-Qf5" id="0dS-VI-IB1"/>
                         <segue destination="Sz2-Gj-iXT" kind="show" identifier="DataToGraph" id="dVM-Av-IX9"/>
@@ -293,7 +293,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="70c-OD-IHm" userLabel="Description">
-                                <rect key="frame" x="16" y="403" width="343" height="193"/>
+                                <rect key="frame" x="16" y="408" width="343" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.54901960780000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -310,7 +310,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="5j7-0B-KOW">
                         <barButtonItem key="rightBarButtonItem" title="Save Chart" id="wuw-Ov-ACT">
-                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="saveButton:" destination="Sz2-Gj-iXT" id="VK3-fI-sAz"/>
                             </connections>
@@ -380,45 +380,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Possible Diagnosis:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctb-Oh-Hbm">
-                                <rect key="frame" x="84" y="87" width="207" height="30"/>
+                                <rect key="frame" x="16" y="77" width="343" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More Information:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4b-4e-hlh">
-                                <rect key="frame" x="84" y="166" width="207" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89803921568627454" green="0.35294117647058826" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kR-AD-fUq" userLabel="Treatment View">
-                                <rect key="frame" x="16" y="195" width="343" height="301"/>
+                                <rect key="frame" x="16" y="225" width="343" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diagnosis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGb-gx-GE3">
-                                <rect key="frame" x="16" y="125" width="343" height="33"/>
+                                <rect key="frame" x="16" y="122" width="343" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobriety" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbV-PA-1yk">
-                                <rect key="frame" x="16" y="533" width="343" height="59"/>
+                                <rect key="frame" x="16" y="561" width="343" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobriety Level:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUT-YQ-fcj">
-                                <rect key="frame" x="108" y="504" width="158" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More Information:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-jq-nhj">
+                                <rect key="frame" x="16" y="176" width="343" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.35294117650000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobriety Level:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccp-by-7sU">
+                                <rect key="frame" x="16" y="515" width="343" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.35294117650000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -434,15 +437,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21R-U7-2sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-919" y="197"/>
+            <point key="canvasLocation" x="-919.20000000000005" y="196.55172413793105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kjg-t0-uBR">
             <objects>
                 <navigationController id="ijc-Y2-S6x" userLabel="Navigation Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Forum" image="Forum" selectedImage="Forum" id="8TK-pT-yLY" userLabel="Forum">
-                        <inset key="imageInsets" minX="-4" minY="-2" maxX="-5" maxY="-6"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Forum" image="Forum" selectedImage="Forum" id="8TK-pT-yLY" userLabel="Forum"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rkT-La-CvV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -582,7 +583,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nearest Hospital or AA Meeting" id="4UH-8c-0Nl"/>
+                    <navigationItem key="navigationItem" title="Find Nearby Help" id="4UH-8c-0Nl"/>
                     <connections>
                         <outlet property="mapView" destination="XtK-v6-ZvV" id="a5q-Vc-IJG"/>
                         <outlet property="segmentedControl" destination="n6z-1e-qzh" id="6EA-ux-pmz"/>
@@ -630,10 +631,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Diagnosis" width="20" height="20"/>
-        <image name="Forum" width="20" height="20"/>
+        <image name="Diagnosis" width="27" height="27"/>
+        <image name="Forum" width="37" height="37"/>
         <image name="Map" width="29" height="29"/>
-        <image name="Treatment" width="20" height="20"/>
+        <image name="Treatment" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pd9-oy-cXK"/>

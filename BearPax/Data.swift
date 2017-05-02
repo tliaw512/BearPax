@@ -8,7 +8,9 @@
 
 import Foundation
 
-let data: [String:Double] = ["BAC":0.33, "AST":93.0, "ALT":140.0, "Albumin":30.0, "Bilirubin":0.0]
+//let data: [String:Double] = ["BAC":0.33, "AST":93.0, "ALT":140.0, "Albumin":30.0, "Bilirubin":0.0]
+
+var data: [PeopleData] = []
 
 let dot: String = "\u{2022}"
 
