@@ -29,6 +29,7 @@
 		9046A0CB1EB8AD1E00FD3CE0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0CA1EB8AD1E00FD3CE0 /* HealthKit.framework */; };
 		9046A0CD1EB8B6C200FD3CE0 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0CC1EB8B6C200FD3CE0 /* DataTableViewCell.swift */; };
 		9046A0D01EB8B8B300FD3CE0 /* PeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0CF1EB8B8B300FD3CE0 /* PeopleData.swift */; };
+		9046A0D21EB8BACF00FD3CE0 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
 		AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */; };
@@ -86,6 +87,7 @@
 		9046A0CA1EB8AD1E00FD3CE0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9046A0CC1EB8B6C200FD3CE0 /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		9046A0CF1EB8B8B300FD3CE0 /* PeopleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleData.swift; sourceTree = "<group>"; };
+		9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,6 +255,7 @@
 			children = (
 				9046A0C41EB7F4B300FD3CE0 /* liverData.json */,
 				9046A0CF1EB8B8B300FD3CE0 /* PeopleData.swift */,
+				9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */,
 			);
 			name = "Data Model";
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				9046A0C11EB73EAA00FD3CE0 /* Annotations.swift in Sources */,
 				9046A0B41EB7110F00FD3CE0 /* TabBarViewController.swift in Sources */,
 				9046A0D01EB8B8B300FD3CE0 /* PeopleData.swift in Sources */,
+				9046A0D21EB8BACF00FD3CE0 /* DataGenerator.swift in Sources */,
 				900EF9721E96B006005BEE34 /* BearPax.xcdatamodeld in Sources */,
 				90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */,
 				90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */,

@@ -25,4 +25,5 @@ class PeopleData {
         self.albumin = albumin
         self.biliruben = biliruben
     }
+    
 }
