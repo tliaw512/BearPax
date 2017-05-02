@@ -8,4 +8,4 @@
 
 import Foundation
 
-let data: [String:Double] = ["BAC":0, "AST":0, "ALT":0, "Albumin":0, "Bilirubin":0]
+let data: [String:Double] = ["BAC":0.3, "AST":100, "ALT":200, "Albumin":3, "Bilirubin":2]

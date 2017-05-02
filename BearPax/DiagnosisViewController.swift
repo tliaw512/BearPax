@@ -10,15 +10,26 @@ import UIKit
 
 class DiagnosisViewController: UIViewController {
     
+    @IBOutlet var DiagnosisLabel: UILabel!
+    @IBOutlet var SobrietyLabel: UILabel!
+    @IBOutlet var TreatmentPlan: UITextView!
+    @IBOutlet var AAPlan: UITextView!
+    var BAC = data["BAC"]
+    var AST = data["AST"]
+    let ALT = data["ALT"]
+    let ALB = data["Albumin"]
+    let BIL = data["Bilirubin"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        let BAC = data["BAC"]
-        let AST = data["AST"]
-        let ALT = data["ALT"]
-        let Alb = data["Albumin"]
-        let Bil = data["Bilirubin"]
+        DiagnosisLabel.numberOfLines = 0
+        SobrietyLabel.numberOfLines = 0
+        DiagnosisLabel.textAlignment = .center
+        SobrietyLabel.textAlignment = .center
+        DiagnosisLabel.text = getDiagnosis()
+        SobrietyLabel.text = getSobriety()
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,5 +47,75 @@ class DiagnosisViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    func getDiagnosis() -> String {
+        if BAC == -1 && AST == -1 && ALT == -1 && ALB == -1 && BIL == -1 {
+            return "No Data"
+        }
+        DiagnosisLabel.textColor = UIColor.red
+        if BIL! > 5 && (ALT! > AST! || AST!/ALT! > 2) {
+            return "Acute Alcoholic Hepatitis"
+        }
+        if AST! > 500 || ALT! > 500 || BIL! > 5 {
+            return "Acute Viral Hepatitis (A, B)"
+        }
+        if ALB! < 5 && ((AST! > 60 && AST! < 140)||(ALT! > 70 && ALT! < 200)) {
+            if AST!/ALT! < 1 {
+                return "Chronic Hepatitis (B, C)\nCirrhosis"
+            } else {
+                return "Chronic Hepatitis (B, C)"
+            }
+        }
+        var current: String = "Healthy"
+        if AST! >= 140 || ALT! >= 200 {
+            if ALT! >= AST! {
+                current = "Nonalcoholic Fatty Liver Disease"
+            }
+        }
+        if AST! > 300 {
+            if AST! >= ALT! {
+                current = "Alcoholic Fatty Liver Disease"
+            }
+        }
+        if AST! > 400 || (BIL! > 1.5 && BIL! < 5) {
+            if ALT! >= AST! {
+                if BAC! < 0.2 {
+                    current = "Overdose"
+                } else {
+                    current = "Alcohol Poisoning"
+                }
+            }
+        }
+        if current == "Healthy" {
+            DiagnosisLabel.textColor = UIColor.green
+        }
+        return current
+    }
+
+    func getSobriety() -> String {
+        if BAC == -1 && AST == -1 && ALT == -1 && ALB == -1 && BIL == -1 {
+            return "No Data"
+        }
+        var current: String = "Sober"
+        SobrietyLabel.textColor = UIColor.green
+        if BAC! > 0.4 {
+            current = "Impaired"
+        }
+        if BAC! > 0.6 {
+            current = "Drunk"
+            SobrietyLabel.textColor = UIColor.yellow
+        }
+        if BAC! > 0.16 {
+            current = "Intoxicated"
+        }
+        if BAC! > 0.25 {
+            current = "Dangerous\nRisk of Alcohol Poisoning"
+            SobrietyLabel.textColor = UIColor.red
+        }
+        if BAC! > 0.4 {
+            current = "Very Dangerous\nRisk of Death"
+        }
+        return current
+    }
+    
     
 }
