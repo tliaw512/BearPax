@@ -19,7 +19,6 @@
 		900EF9A01E96CEB2005BEE34 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF99F1E96CEB2005BEE34 /* LogInViewController.swift */; };
 		900EF9A21E96CEC9005BEE34 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9A11E96CEC9005BEE34 /* SignInViewController.swift */; };
 		900EF9A41E96CEE0005BEE34 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9A31E96CEE0005BEE34 /* DataViewController.swift */; };
-		900EF9A61E96CEEB005BEE34 /* DiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */; };
 		9046A0B21EAE93E600FD3CE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */; };
 		9046A0B41EB7110F00FD3CE0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0B31EB7110F00FD3CE0 /* TabBarViewController.swift */; };
 		9046A0BF1EB739D500FD3CE0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0BE1EB739D500FD3CE0 /* MapKit.framework */; };
@@ -32,6 +31,8 @@
 		9046A0D21EB8BACF00FD3CE0 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */; };
 		9046A0E61EB9000F00FD3CE0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0E31EB9000000FD3CE0 /* Charts.framework */; };
 		9046A0E71EB9000F00FD3CE0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0E31EB9000000FD3CE0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9046A0EC1EB90E8100FD3CE0 /* DiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */; };
+		9046A0EE1EB90EB100FD3CE0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0ED1EB90EB100FD3CE0 /* Data.swift */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
 		AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */; };
@@ -113,7 +114,6 @@
 		900EF99F1E96CEB2005BEE34 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		900EF9A11E96CEC9005BEE34 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		900EF9A31E96CEE0005BEE34 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisViewController.swift; sourceTree = "<group>"; };
 		9046A0B11EAE93E600FD3CE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9046A0B31EB7110F00FD3CE0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
 		9046A0BE1EB739D500FD3CE0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -126,6 +126,8 @@
 		9046A0CF1EB8B8B300FD3CE0 /* PeopleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleData.swift; sourceTree = "<group>"; };
 		9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 		9046A0DD1EB9000000FD3CE0 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagnosisViewController.swift; path = ../../../DiagnosisViewController.swift; sourceTree = "<group>"; };
+		9046A0ED1EB90EB100FD3CE0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = ../../../Data.swift; sourceTree = "<group>"; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,7 +262,8 @@
 		900EF99C1E96CE4F005BEE34 /* Diagnosis */ = {
 			isa = PBXGroup;
 			children = (
-				900EF9A51E96CEEB005BEE34 /* DiagnosisViewController.swift */,
+				9046A0ED1EB90EB100FD3CE0 /* Data.swift */,
+				9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */,
 			);
 			name = Diagnosis;
 			sourceTree = "<group>";
@@ -640,13 +643,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				900EF9A01E96CEB2005BEE34 /* LogInViewController.swift in Sources */,
-				900EF9A61E96CEEB005BEE34 /* DiagnosisViewController.swift in Sources */,
+				9046A0EE1EB90EB100FD3CE0 /* Data.swift in Sources */,
 				9046A0C11EB73EAA00FD3CE0 /* Annotations.swift in Sources */,
 				9046A0B41EB7110F00FD3CE0 /* TabBarViewController.swift in Sources */,
 				9046A0D01EB8B8B300FD3CE0 /* PeopleData.swift in Sources */,
 				9046A0D21EB8BACF00FD3CE0 /* DataGenerator.swift in Sources */,
 				900EF9721E96B006005BEE34 /* BearPax.xcdatamodeld in Sources */,
 				90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */,
+				9046A0EC1EB90E8100FD3CE0 /* DiagnosisViewController.swift in Sources */,
 				90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */,
 				9046A0CD1EB8B6C200FD3CE0 /* DataTableViewCell.swift in Sources */,
 				900EF9A21E96CEC9005BEE34 /* SignInViewController.swift in Sources */,

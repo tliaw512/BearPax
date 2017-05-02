@@ -13,11 +13,16 @@ class GraphViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var descriptionText: UITextView!
-    @IBOutlet weak var lineChart: LineChartView!
+    @IBOutlet weak var barChart: BarChartView!
+    
     
     var person: PeopleData?
     var hours: [Double]?
     var values: [Double]?
+
+    @IBAction func saveButton(_ sender: Any) {
+        UIImageWriteToSavedPhotosAlbum(barChart.getChartImage(transparent: false)!, nil, nil, nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,34 +33,31 @@ class GraphViewController: UIViewController {
             hours = [1, 2, 3, 4, 5]
             values = [person.Hour1, person.Hour2, person.Hour3, person.Hour4, person.Hour5]
             setChart(dataPoints: hours!, values: values!)
+            navigationItem.title = person.type
         }
 
     }
     
     func setChart(dataPoints: [Double], values: [Double]) {
-        var dataEntries: [ChartDataEntry] = []
+        var dataEntries: [BarChartDataEntry] = []
         
         for i in 0..<dataPoints.count {
-            let dataEntry = ChartDataEntry(x: values[i], y: Double(i))
+            let dataEntry = BarChartDataEntry(x: dataPoints[i], y: values[i])
             dataEntries.append(dataEntry)
         }
         
-        let lineChartDataSet = LineChartDataSet(values: dataEntries, label: (person?.type)! + " levels")
-        lineChartDataSet.setColor(UIColor.red)
-        lineChartDataSet.setCircleColor(UIColor.red)
-        lineChartDataSet.lineWidth = 2.0
-        lineChartDataSet.circleRadius = 6.0
-        lineChartDataSet.fillAlpha = 65 / 255.0
-        lineChartDataSet.fillColor = UIColor.red
-        lineChartDataSet.highlightColor = UIColor.white
-        lineChartDataSet.drawCircleHoleEnabled = true
-        
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: (person?.type)! + " levels")
         var dataSets = [IChartDataSet]()
-        dataSets.append(lineChartDataSet)
-        let lineChartData = LineChartData(dataSets: dataSets)
-        lineChart.data = lineChartData
-
+        dataSets.append(chartDataSet)
+        
+        let chartData = BarChartData(dataSets: dataSets)
+        barChart.data = chartData
+        barChart.chartDescription?.text = ""
+        barChart.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        chartDataSet.colors = [UIColor(red:1.00, green:0.55, blue:0.40, alpha:1.0)]
+        
     }
+
 
 
     override func didReceiveMemoryWarning() {
