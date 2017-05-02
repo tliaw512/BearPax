@@ -13,7 +13,6 @@ class DiagnosisViewController: UIViewController {
     @IBOutlet var DiagnosisLabel: UILabel!
     @IBOutlet var SobrietyLabel: UILabel!
     @IBOutlet var TreatmentPlan: UITextView!
-    @IBOutlet var AAPlan: UITextView!
     var BAC = data["BAC"]
     var AST = data["AST"]
     let ALT = data["ALT"]
@@ -30,6 +29,7 @@ class DiagnosisViewController: UIViewController {
         SobrietyLabel.textAlignment = .center
         DiagnosisLabel.text = getDiagnosis()
         SobrietyLabel.text = getSobriety()
+        TreatmentPlan.text = getInfo()
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,17 +52,20 @@ class DiagnosisViewController: UIViewController {
             return "No Data"
         }
         DiagnosisLabel.textColor = UIColor.red
+        if BAC! > 0.3 {
+            return "Alcohol Poisoning"
+        }
         if BIL! > 5 && (ALT! > AST! || AST!/ALT! > 2) {
             return "Acute Alcoholic Hepatitis"
         }
         if AST! > 500 || ALT! > 500 || BIL! > 5 {
-            return "Acute Viral Hepatitis (A, B)"
+            return "Acute Viral Hepatitis"
         }
         if ALB! < 5 && ((AST! > 60 && AST! < 140)||(ALT! > 70 && ALT! < 200)) {
             if AST!/ALT! < 1 {
-                return "Chronic Hepatitis (B, C)\nCirrhosis"
+                return "Chronic Hepatitis\nCirrhosis"
             } else {
-                return "Chronic Hepatitis (B, C)"
+                return "Chronic Hepatitis"
             }
         }
         var current: String = "Healthy"
@@ -117,5 +120,12 @@ class DiagnosisViewController: UIViewController {
         return current
     }
     
-    
+    func getInfo() -> String {
+        if DiagnosisLabel.text == "Healthy" || DiagnosisLabel.text == "No Data" {
+            return ""
+        }
+        else {
+            return info[DiagnosisLabel.text!]!
+        }
+    }
 }
