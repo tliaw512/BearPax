@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Charts
 
 class GraphViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var descriptionText: UITextView!
+    
+    
     var person: PeopleData?
     
     override func viewDidLoad() {
