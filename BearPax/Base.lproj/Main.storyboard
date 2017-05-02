@@ -193,7 +193,7 @@
             <objects>
                 <navigationController id="nge-Du-ZKi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Data" image="Diagnosis" selectedImage="Diagnosis" id="l5p-Gy-qCQ" userLabel="Data"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ASN-v3-oc1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ASN-v3-oc1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.40000000000000002" green="0.54901960780000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -394,7 +394,7 @@
             <objects>
                 <navigationController id="ijc-Y2-S6x" userLabel="Navigation Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Forum" image="Forum" selectedImage="Forum" id="8TK-pT-yLY" userLabel="Forum"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rkT-La-CvV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rkT-La-CvV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.40000000000000002" green="0.5490196078431373" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
