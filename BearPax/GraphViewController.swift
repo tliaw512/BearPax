@@ -35,7 +35,6 @@ class GraphViewController: UIViewController {
             setChart(dataPoints: hours!, values: values!)
             navigationItem.title = person.type
         }
-
     }
     
     func setChart(dataPoints: [Double], values: [Double]) {
@@ -54,8 +53,8 @@ class GraphViewController: UIViewController {
         barChart.data = chartData
         barChart.chartDescription?.text = ""
         barChart.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        barChart.legend.colors = [UIColor(red:1.00, green:0.55, blue:0.40, alpha:1.0)]
         chartDataSet.colors = [UIColor(red:1.00, green:0.55, blue:0.40, alpha:1.0)]
-        
     }
 
 
