@@ -29,8 +29,6 @@
 		9046A0CD1EB8B6C200FD3CE0 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0CC1EB8B6C200FD3CE0 /* DataTableViewCell.swift */; };
 		9046A0D01EB8B8B300FD3CE0 /* PeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0CF1EB8B8B300FD3CE0 /* PeopleData.swift */; };
 		9046A0D21EB8BACF00FD3CE0 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */; };
-		9046A0E61EB9000F00FD3CE0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0E31EB9000000FD3CE0 /* Charts.framework */; };
-		9046A0E71EB9000F00FD3CE0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0E31EB9000000FD3CE0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9046A0EC1EB90E8100FD3CE0 /* DiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */; };
 		9046A0EE1EB90EB100FD3CE0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0ED1EB90EB100FD3CE0 /* Data.swift */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
@@ -53,27 +51,6 @@
 			remoteGlobalIDString = 900EF9651E96B006005BEE34;
 			remoteInfo = BearPax;
 		};
-		9046A0E21EB9000000FD3CE0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9046A0DD1EB9000000FD3CE0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F241D8110E600722320;
-			remoteInfo = Charts;
-		};
-		9046A0E41EB9000000FD3CE0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9046A0DD1EB9000000FD3CE0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F2E1D8110E600722320;
-			remoteInfo = ChartsTests;
-		};
-		9046A0E81EB9000F00FD3CE0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9046A0DD1EB9000000FD3CE0 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06165F231D8110E600722320;
-			remoteInfo = Charts;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,7 +60,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9046A0E71EB9000F00FD3CE0 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,9 +101,8 @@
 		9046A0CC1EB8B6C200FD3CE0 /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		9046A0CF1EB8B8B300FD3CE0 /* PeopleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleData.swift; sourceTree = "<group>"; };
 		9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
-		9046A0DD1EB9000000FD3CE0 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
-		9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagnosisViewController.swift; path = ../../../DiagnosisViewController.swift; sourceTree = "<group>"; };
-		9046A0ED1EB90EB100FD3CE0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = ../../../Data.swift; sourceTree = "<group>"; };
+		9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisViewController.swift; sourceTree = "<group>"; };
+		9046A0ED1EB90EB100FD3CE0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +115,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9046A0CB1EB8AD1E00FD3CE0 /* HealthKit.framework in Frameworks */,
-				9046A0E61EB9000F00FD3CE0 /* Charts.framework in Frameworks */,
 				9046A0BF1EB739D500FD3CE0 /* MapKit.framework in Frameworks */,
 				AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */,
 			);
@@ -180,7 +154,6 @@
 		900EF95D1E96B006005BEE34 = {
 			isa = PBXGroup;
 			children = (
-				9046A0DD1EB9000000FD3CE0 /* Charts.xcodeproj */,
 				900EF9681E96B006005BEE34 /* BearPax */,
 				900EF9801E96B007005BEE34 /* BearPaxTests */,
 				900EF98B1E96B007005BEE34 /* BearPaxUITests */,
@@ -303,15 +276,6 @@
 			name = "Data Model";
 			sourceTree = "<group>";
 		};
-		9046A0DE1EB9000000FD3CE0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9046A0E31EB9000000FD3CE0 /* Charts.framework */,
-				9046A0E51EB9000000FD3CE0 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BAAF84ACC7E8FFC7E0C300CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,7 +307,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9046A0E91EB9000F00FD3CE0 /* PBXTargetDependency */,
 			);
 			name = BearPax;
 			productName = BearPax;
@@ -438,12 +401,6 @@
 			mainGroup = 900EF95D1E96B006005BEE34;
 			productRefGroup = 900EF9671E96B006005BEE34 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9046A0DE1EB9000000FD3CE0 /* Products */;
-					ProjectRef = 9046A0DD1EB9000000FD3CE0 /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				900EF9651E96B006005BEE34 /* BearPax */,
@@ -452,23 +409,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9046A0E31EB9000000FD3CE0 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 9046A0E21EB9000000FD3CE0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9046A0E51EB9000000FD3CE0 /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = 9046A0E41EB9000000FD3CE0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		900EF9641E96B006005BEE34 /* Resources */ = {
@@ -689,11 +629,6 @@
 			target = 900EF9651E96B006005BEE34 /* BearPax */;
 			targetProxy = 900EF9891E96B007005BEE34 /* PBXContainerItemProxy */;
 		};
-		9046A0E91EB9000F00FD3CE0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 9046A0E81EB9000F00FD3CE0 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -820,6 +755,7 @@
 				CODE_SIGN_ENTITLEMENTS = BearPax/BearPax.entitlements;
 				DEVELOPMENT_TEAM = RP8B5HX5D9;
 				INFOPLIST_FILE = BearPax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tiffzilla.BearPax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -836,6 +772,7 @@
 				CODE_SIGN_ENTITLEMENTS = BearPax/BearPax.entitlements;
 				DEVELOPMENT_TEAM = RP8B5HX5D9;
 				INFOPLIST_FILE = BearPax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tiffzilla.BearPax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -868,6 +805,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tiffzilla.BearPaxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BearPax.app/BearPax";
 			};

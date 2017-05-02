@@ -8,7 +8,7 @@
 
 import Foundation
 
-let data: [String:Double] = ["BAC":-1, "AST":-1, "ALT":-1, "Albumin":-1, "Bilirubin":-1]
+let data: [String:Double] = ["BAC":0.33, "AST":93.0, "ALT":140.0, "Albumin":30.0, "Bilirubin":0.0]
 
 let dot: String = "\u{2022}"
 
