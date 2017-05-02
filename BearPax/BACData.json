@@ -1,0 +1,42 @@
+{
+	"BAC": {
+		"Hour1": "0",
+		"Hour2": "0.13",
+		"Hour3": "15",
+		"Hour4": "0",
+		"Hour5": "0",
+        "Description": ""
+	},
+	"AST": {
+		"Hour1": "0.1",
+		"Hour2": "10",
+		"Hour3": "15",
+		"Hour4": "0",
+		"Hour5": ".1",
+        "Description": ""
+	},
+	"ALT": {
+		"Hour1": "0.15",
+		"Hour2": "10",
+		"Hour3": "15",
+		"Hour4": "0",
+		"Hour5": "0",
+        "Description": ""
+	},
+	"Albumin": {
+		"Hour1": "0.32",
+		"Hour2": "132",
+		"Hour3": "100",
+		"Hour4": "0",
+		"Hour5": "0",
+        "Description": ""
+	},
+    "Biliruben": {
+        "Hour1": "0.44",
+        "Hour2": "150",
+        "Hour3": "118",
+        "Hour4": "0",
+        "Hour5": "0",
+        "Description": ""
+    }
+}

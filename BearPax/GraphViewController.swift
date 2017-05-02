@@ -10,10 +10,16 @@ import UIKit
 
 class GraphViewController: UIViewController {
 
+    @IBOutlet weak var dataLabel: UILabel!
+    var person: PeopleData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let person = person {
+            dataLabel.text = String(person.Hour5)
+        }
 
-            }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

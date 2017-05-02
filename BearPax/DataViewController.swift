@@ -21,6 +21,7 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        dataArray = DataGenerator.getDataArray()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,8 +33,9 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DataTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DataTableViewCell", for: indexPath) as! DataTableViewCell
         let person: PeopleData! = dataArray![indexPath.row]
+        cell.textLabel?.text = person.type
         return cell
     }
 
@@ -46,7 +48,7 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
         if let identifier = segue.identifier {
             if identifier == "DataToGraph" {
                 if let dest = segue.destination as? GraphViewController {
-                    
+                    dest.person = dataArray?[(selectedIndexPath?.row)!]
                 }
             }
         }
