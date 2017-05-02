@@ -26,6 +26,7 @@
 		9046A0C11EB73EAA00FD3CE0 /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0C01EB73EAA00FD3CE0 /* Annotations.swift */; };
 		9046A0C31EB7DEEC00FD3CE0 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0C21EB7DEEC00FD3CE0 /* GraphViewController.swift */; };
 		9046A0C51EB7F4B300FD3CE0 /* liverData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9046A0C41EB7F4B300FD3CE0 /* liverData.json */; };
+		9046A0CB1EB8AD1E00FD3CE0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9046A0CA1EB8AD1E00FD3CE0 /* HealthKit.framework */; };
 		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
 		AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */; };
@@ -79,6 +80,8 @@
 		9046A0C01EB73EAA00FD3CE0 /* Annotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
 		9046A0C21EB7DEEC00FD3CE0 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		9046A0C41EB7F4B300FD3CE0 /* liverData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = liverData.json; sourceTree = "<group>"; };
+		9046A0C91EB8AD1E00FD3CE0 /* BearPax.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BearPax.entitlements; sourceTree = "<group>"; };
+		9046A0CA1EB8AD1E00FD3CE0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9046A0CB1EB8AD1E00FD3CE0 /* HealthKit.framework in Frameworks */,
 				9046A0BF1EB739D500FD3CE0 /* MapKit.framework in Frameworks */,
 				AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */,
 			);
@@ -117,6 +121,7 @@
 		8C410F47A3DDA44F637E43EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9046A0CA1EB8AD1E00FD3CE0 /* HealthKit.framework */,
 				9046A0BE1EB739D500FD3CE0 /* MapKit.framework */,
 				3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */,
 				8E5ACC3C0C220FB9EB51E2B4 /* Pods_BearPaxTests.framework */,
@@ -150,6 +155,7 @@
 		900EF9681E96B006005BEE34 /* BearPax */ = {
 			isa = PBXGroup;
 			children = (
+				9046A0C91EB8AD1E00FD3CE0 /* BearPax.entitlements */,
 				9046A0B51EB7111F00FD3CE0 /* Tab Bar */,
 				900EF99B1E96CE46005BEE34 /* Data */,
 				900EF99A1E96CE13005BEE34 /* Auth */,
@@ -330,6 +336,9 @@
 						DevelopmentTeam = RP8B5HX5D9;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
@@ -704,6 +713,7 @@
 			baseConfigurationReference = 4CE0EB8B46CE1C1D78BB6B6E /* Pods-BearPax.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BearPax/BearPax.entitlements;
 				DEVELOPMENT_TEAM = RP8B5HX5D9;
 				INFOPLIST_FILE = BearPax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -718,6 +728,7 @@
 			baseConfigurationReference = 5A91DAD2BE7862DB3F63BBC4 /* Pods-BearPax.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BearPax/BearPax.entitlements;
 				DEVELOPMENT_TEAM = RP8B5HX5D9;
 				INFOPLIST_FILE = BearPax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
