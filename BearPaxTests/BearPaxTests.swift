@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import BearPax
 
 class BearPaxTests: XCTestCase {
     
