@@ -12,6 +12,8 @@ import Foundation
 
 var data: [PeopleData] = []
 
+var posts: [Post] = []
+
 let dot: String = "\u{2022}"
 
 let info: [String:String] = [

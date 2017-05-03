@@ -1,14 +1,14 @@
 //
-//  ForumViewController.swift
+//  CreateViewController.swift
 //  BearPax
 //
-//  Created by Tiffany Liaw on 4/6/17.
+//  Created by Sarah Chin on 5/2/17.
 //  Copyright © 2017 Tiffany Liaw. All rights reserved.
 //
 
 import UIKit
 
-class ForumCollectionViewController: UIViewController {
+class CreateViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
