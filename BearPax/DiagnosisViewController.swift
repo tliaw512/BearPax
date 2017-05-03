@@ -45,15 +45,6 @@ class DiagnosisViewController: UIViewController {
     }
     
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     func getDiagnosis() -> String {
         if data.count == 0 {
             return "No Data"
@@ -112,7 +103,7 @@ class DiagnosisViewController: UIViewController {
         }
         if BAC > 0.06 {
             current = "Drunk"
-            SobrietyLabel.textColor = UIColor.yellow
+            SobrietyLabel.textColor = UIColor(red:0.80, green:0.80, blue:0.00, alpha:1.0)
         }
         if BAC > 0.16 {
             current = "Intoxicated"
