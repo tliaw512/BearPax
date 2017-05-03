@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1B3B35F5EDA3860B1B0DF5C6 /* Pods_BearPaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E5ACC3C0C220FB9EB51E2B4 /* Pods_BearPaxTests.framework */; };
+		3D31400B1EB99A3000239F64 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31400A1EB99A3000239F64 /* PostsViewController.swift */; };
+		3D31400F1EB99BFB00239F64 /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31400E1EB99BFB00239F64 /* PostsTableViewCell.swift */; };
+		3D3140111EB99D2E00239F64 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3140101EB99D2E00239F64 /* Post.swift */; };
+		3D3140131EB9A00800239F64 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3140121EB9A00800239F64 /* CreateViewController.swift */; };
 		5845DBEEE5DEC377C8E83D6F /* Pods_BearPaxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */; };
 		900EF96A1E96B006005BEE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EF9691E96B006005BEE34 /* AppDelegate.swift */; };
 		900EF96F1E96B006005BEE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 900EF96D1E96B006005BEE34 /* Main.storyboard */; };
@@ -31,7 +35,7 @@
 		9046A0D21EB8BACF00FD3CE0 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */; };
 		9046A0EC1EB90E8100FD3CE0 /* DiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */; };
 		9046A0EE1EB90EB100FD3CE0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046A0ED1EB90EB100FD3CE0 /* Data.swift */; };
-		90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */; };
+		90C8DECF1E971EA500FEBF18 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DECE1E971EA500FEBF18 /* ForumViewController.swift */; };
 		90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C8DED21E971EE200FEBF18 /* MapViewController.swift */; };
 		AE26426C9D3E9F9F564C3CE7 /* Pods_BearPax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +73,10 @@
 /* Begin PBXFileReference section */
 		1D90AA1E1792C79C69F74DB3 /* Pods-BearPaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BearPaxUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BearPaxUITests/Pods-BearPaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BCF9E00D41BF000BF1EB267 /* Pods_BearPax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D31400A1EB99A3000239F64 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		3D31400E1EB99BFB00239F64 /* PostsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
+		3D3140101EB99D2E00239F64 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3D3140121EB9A00800239F64 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		4CE0EB8B46CE1C1D78BB6B6E /* Pods-BearPax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BearPax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BearPax/Pods-BearPax.debug.xcconfig"; sourceTree = "<group>"; };
 		5A91DAD2BE7862DB3F63BBC4 /* Pods-BearPax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BearPax.release.xcconfig"; path = "Pods/Target Support Files/Pods-BearPax/Pods-BearPax.release.xcconfig"; sourceTree = "<group>"; };
 		5E3A799FD3B4C9D7EA79821C /* Pods-BearPaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BearPaxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BearPaxTests/Pods-BearPaxTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +111,7 @@
 		9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 		9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisViewController.swift; sourceTree = "<group>"; };
 		9046A0ED1EB90EB100FD3CE0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCollectionViewController.swift; sourceTree = "<group>"; };
+		90C8DECE1E971EA500FEBF18 /* ForumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		90C8DED21E971EE200FEBF18 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E5228719D1794A8D94CBB4B3 /* Pods_BearPaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BearPaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF934F09D00C6B4228A48EE8 /* Pods-BearPaxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BearPaxUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BearPaxUITests/Pods-BearPaxUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -235,7 +243,6 @@
 		900EF99C1E96CE4F005BEE34 /* Diagnosis */ = {
 			isa = PBXGroup;
 			children = (
-				9046A0ED1EB90EB100FD3CE0 /* Data.swift */,
 				9046A0EB1EB90E8100FD3CE0 /* DiagnosisViewController.swift */,
 			);
 			name = Diagnosis;
@@ -244,7 +251,10 @@
 		900EF99D1E96CE5B005BEE34 /* Forum */ = {
 			isa = PBXGroup;
 			children = (
-				90C8DECE1E971EA500FEBF18 /* ForumCollectionViewController.swift */,
+				90C8DECE1E971EA500FEBF18 /* ForumViewController.swift */,
+				3D31400A1EB99A3000239F64 /* PostsViewController.swift */,
+				3D3140121EB9A00800239F64 /* CreateViewController.swift */,
+				3D31400E1EB99BFB00239F64 /* PostsTableViewCell.swift */,
 			);
 			name = Forum;
 			sourceTree = "<group>";
@@ -271,6 +281,8 @@
 			children = (
 				9046A0C41EB7F4B300FD3CE0 /* BACData.json */,
 				9046A0CF1EB8B8B300FD3CE0 /* PeopleData.swift */,
+				9046A0ED1EB90EB100FD3CE0 /* Data.swift */,
+				3D3140101EB99D2E00239F64 /* Post.swift */,
 				9046A0D11EB8BACF00FD3CE0 /* DataGenerator.swift */,
 			);
 			name = "Data Model";
@@ -590,11 +602,15 @@
 				9046A0D21EB8BACF00FD3CE0 /* DataGenerator.swift in Sources */,
 				900EF9721E96B006005BEE34 /* BearPax.xcdatamodeld in Sources */,
 				90C8DED31E971EE200FEBF18 /* MapViewController.swift in Sources */,
+				3D3140131EB9A00800239F64 /* CreateViewController.swift in Sources */,
 				9046A0EC1EB90E8100FD3CE0 /* DiagnosisViewController.swift in Sources */,
-				90C8DECF1E971EA500FEBF18 /* ForumCollectionViewController.swift in Sources */,
+				90C8DECF1E971EA500FEBF18 /* ForumViewController.swift in Sources */,
+				3D31400F1EB99BFB00239F64 /* PostsTableViewCell.swift in Sources */,
 				9046A0CD1EB8B6C200FD3CE0 /* DataTableViewCell.swift in Sources */,
 				900EF9A21E96CEC9005BEE34 /* SignInViewController.swift in Sources */,
+				3D31400B1EB99A3000239F64 /* PostsViewController.swift in Sources */,
 				9046A0C31EB7DEEC00FD3CE0 /* GraphViewController.swift in Sources */,
+				3D3140111EB99D2E00239F64 /* Post.swift in Sources */,
 				900EF9A41E96CEE0005BEE34 /* DataViewController.swift in Sources */,
 				900EF96A1E96B006005BEE34 /* AppDelegate.swift in Sources */,
 			);

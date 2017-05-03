@@ -1,11 +1,11 @@
 {
 	"BAC": {
 		"Hour1": "0",
-		"Hour2": "0.13",
+		"Hour2": "0.11",
 		"Hour3": "0.14",
-		"Hour4": "0.32",
-		"Hour5": "0.33",
-        "Description": "    Blood alcohol content indicates the amount of ethyl alcohol dissolved in your blood. Your blood alcohol level depends upon the rate and amount of alcohol you've consumed, as well as your size and weight, your overall health, whether you've eaten recently, and the percentage of alcohol in your drunks"
+		"Hour4": "0.16",
+		"Hour5": "0.19",
+        "Description": "    Blood alcohol content indicates the amount of ethyl alcohol dissolved in your blood. Your blood alcohol level depends upon the rate and amount of alcohol you've consumed, as well as your size and weight, your overall health, whether you've eaten recently, and the percentage of alcohol in your drinks."
 	},
 	"AST": {
 		"Hour1": "10",
@@ -20,16 +20,16 @@
 		"Hour2": "20",
 		"Hour3": "20",
 		"Hour4": "132",
-		"Hour5": "140",
+		"Hour5": "141",
         "Description": "    ALT (alanine aminotransferase) is an enzyme commonly found in low levels in the blood. Increases in ALT levels indicates liver damage. Detecting ALT levels can help identify specific liver disease and track amount of liver damage."
 	},
 	"Albumin": {
-		"Hour1": "30",
-		"Hour2": "30",
-		"Hour3": "30",
-		"Hour4": "30",
-		"Hour5": "30",
-        "Description": "    Albumin is a protein made by the liver. Detecting albumin levels can help determine liver disease. Low levels often indicate signs of liver disease. In cases of cirrhosis, albumin levels may be normal. "
+		"Hour1": "3",
+		"Hour2": "3",
+		"Hour3": "3",
+		"Hour4": "2.9",
+		"Hour5": "2.9",
+        "Description": "    Albumin is a protein made by the liver. Detecting albumin levels can help determine liver disease. Low levels often indicate signs of liver disease. In cases of cirrhosis, albumin levels may be normal."
 	},
     "Bilirubin": {
         "Hour1": "0",

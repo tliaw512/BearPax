@@ -27,5 +27,4 @@ class PeopleData {
         self.Hour5 = Hour5
         self.Description = Description
     }
-    
 }
