@@ -33,6 +33,7 @@ class DataGenerator {
                 
             }
         }
+        data = dataArray
         return dataArray
     }
 

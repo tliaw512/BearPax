@@ -53,7 +53,7 @@ class GraphViewController: UIViewController {
         barChart.data = chartData
         barChart.chartDescription?.text = ""
         barChart.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
-        barChart.legend.colors = [UIColor(red:1.00, green:0.55, blue:0.40, alpha:1.0)]
+        barChart.legend.enabled = false
         chartDataSet.colors = [UIColor(red:1.00, green:0.55, blue:0.40, alpha:1.0)]
     }
 
@@ -62,7 +62,4 @@ class GraphViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-
-
 }
