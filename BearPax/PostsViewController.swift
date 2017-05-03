@@ -33,16 +33,16 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostsTableViewCell", for: indexPath) as! PostsTableViewCell
         let post = posts[indexPath.row]
-        cell.num_comments?.text = "" //FIX ME
-        cell.num_views?.text = ""
-        cell.textLabel?.text = ""
-        cell.detailTextLabel?.text = ""
+        cell.num_comments?.text = "0"
+        cell.num_views?.text = "\(post.viewers)"
+        cell.textLabel?.text = post.title
+        cell.detailTextLabel?.text = post.description
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedIndexPath = indexPath
-        //posts[indexPath.row].views += 1
+        posts[indexPath.row].viewers += 1
         //performSegue(withIdentifier: "PostsToInfo", sender: self)
     }
     

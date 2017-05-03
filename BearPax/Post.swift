@@ -8,5 +8,12 @@
 
 import Foundation
 class Post {
-    
+    let title: String!
+    let description: String!
+    var viewers = 0
+    init(title: String, description: String, viewers: Int) {
+        self.title = title
+        self.description = description
+        self.viewers = viewers
+    }
 }

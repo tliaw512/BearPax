@@ -460,7 +460,7 @@
             </objects>
             <point key="canvasLocation" x="-1706" y="1698"/>
         </scene>
-        <!--Connect With Others-->
+        <!--Forum-->
         <scene sceneID="HCO-ud-jlc">
             <objects>
                 <viewController id="eEI-Pe-gAu" customClass="ForumViewController" customModule="BearPax" customModuleProvider="target" sceneMemberID="viewController">
@@ -526,7 +526,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Connect With Others" id="ozO-Mr-ACG"/>
+                    <navigationItem key="navigationItem" title="Forum" id="ozO-Mr-ACG"/>
                     <connections>
                         <outlet property="allButton" destination="c5O-5E-74P" id="u3F-sU-xPM"/>
                         <outlet property="otherButton" destination="iSe-3P-hXt" id="LTY-4W-hQU"/>
@@ -549,7 +549,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="geO-Gj-fP8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="47" width="375" height="571"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -604,6 +604,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Your Posts" id="9ug-8J-nss">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="edit" id="KxE-oW-bmf"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="g4C-bR-b7v">
                             <connections>
                                 <segue destination="nt9-rk-9r9" kind="show" id="yYF-wH-1v5"/>
@@ -664,9 +665,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Post" id="liz-49-SGv">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="6lu-CM-xCl"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GKC-Ep-5fy"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2Ox-RQ-3sd">
+                            <connections>
+                                <action selector="cancel:" destination="nt9-rk-9r9" id="fXE-BR-ViU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GKC-Ep-5fy">
+                            <connections>
+                                <action selector="save:" destination="nt9-rk-9r9" id="GZT-Kp-BbW"/>
+                                <segue destination="FZP-qS-ZrN" kind="show" identifier="Save" id="n24-4a-SVb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="post_description" destination="TCM-JC-HtX" id="f6o-1g-u2b"/>
+                        <outlet property="post_title" destination="KHa-It-HuI" id="cMp-xM-Thy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tq3-6h-ujp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -743,6 +757,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="pd9-oy-cXK"/>
+        <segue reference="n24-4a-SVb"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
