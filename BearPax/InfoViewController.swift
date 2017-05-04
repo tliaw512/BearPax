@@ -10,10 +10,16 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet var title_label: UILabel!
+    @IBOutlet var desc_label: UILabel!
+    @IBOutlet var comment: UITextField!
+    var t: String = ""
+    var d: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        title_label.text = t
+        desc_label.text = d
     }
 
     override func didReceiveMemoryWarning() {

@@ -44,9 +44,10 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        posts[indexPath.row].viewers += 1
+        self.tableView.reloadData()
         selectedIndexPath = indexPath
-        posts[indexPath.row].updateView()
-        //performSegue(withIdentifier: "PostsToInfo", sender: self)
+        performSegue(withIdentifier: "PostsToInfo", sender: self)
     }
     
     // MARK: - Actions
@@ -57,14 +58,19 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let identifier = segue.identifier {
+            if identifier == "PostsToInfo" {
+                if let dest = segue.destination as? InfoViewController {
+                    let post = posts[(selectedIndexPath?.row)!]
+                    dest.t = post.title
+                    dest.d = post.description
+                }
+            }
+        }
     }
-    */
 
 }
