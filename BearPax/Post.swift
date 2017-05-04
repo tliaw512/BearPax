@@ -10,10 +10,10 @@ import Foundation
 class Post {
     let title: String!
     let description: String!
-    var viewers = 0
-    init(title: String, description: String, viewers: Int) {
+    var viewers: Int = 0
+    var comment_list: [String] = []
+    init(title: String, description: String) {
         self.title = title
         self.description = description
-        self.viewers = viewers
     }
 }

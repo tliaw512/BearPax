@@ -12,6 +12,7 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet var tableView: UITableView!
     var selectedIndexPath: IndexPath?
+    var posts: [Post] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,7 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,27 +35,42 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostsTableViewCell", for: indexPath) as! PostsTableViewCell
         let post = posts[indexPath.row]
-        cell.num_comments?.text = "0"
+        cell.num_comments?.text = "\(post.comment_list.count)"
         cell.num_views?.text = "\(post.viewers)"
-        cell.textLabel?.text = post.title
-        cell.detailTextLabel?.text = post.description
+        cell.title_label.text = post.title
+        cell.title_label.font = UIFont.boldSystemFont(ofSize: 18)
+        cell.desc_label.text = post.description
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedIndexPath = indexPath
         posts[indexPath.row].viewers += 1
-        //performSegue(withIdentifier: "PostsToInfo", sender: self)
+        self.tableView.reloadData()
+        selectedIndexPath = indexPath
+        performSegue(withIdentifier: "PostsToInfo", sender: self)
     }
     
-    /*
+    // MARK: - Actions
+    @IBAction func unwindToPosts(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? CreateViewController, let post = sourceViewController.post {
+            posts.append(post)
+            self.tableView.reloadData()
+        }
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let identifier = segue.identifier {
+            if identifier == "PostsToInfo" {
+                if let dest = segue.destination as? InfoViewController {
+                    let post = posts[(selectedIndexPath?.row)!]
+                    dest.t = post.title
+                    dest.d = post.description
+                }
+            }
+        }
     }
-    */
 
 }
