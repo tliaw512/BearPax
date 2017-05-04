@@ -12,9 +12,6 @@ import Foundation
 
 var data: [PeopleData] = []
 
-//var posts: [Post] = [Post(title: "I might be an alcoholic", description: "I drink every weekend and am really concerned", viewers: 1)]
-var posts: [Post] = []
-
 let dot: String = "\u{2022}"
 
 let info: [String:String] = [

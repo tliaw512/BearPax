@@ -10,17 +10,16 @@ import UIKit
 
 class PostsTableViewCell: UITableViewCell {
     
-    @IBOutlet var views: UILabel!
-    @IBOutlet var comments: UILabel!
+    
+    @IBOutlet var title_label: UILabel!
+    @IBOutlet var desc_label: UILabel!
     @IBOutlet var num_comments: UILabel!
     @IBOutlet var num_views: UILabel!
     var comments_list: [String] = []
-    var view_counter: Int = 0
+    var view_counter: Int?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        comments.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "comments"))
-        views.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "views"))
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
