@@ -42,6 +42,7 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedIndexPath = indexPath
+        tableView.reloadData()
         performSegue(withIdentifier: "DataToGraph", sender: self)
     }
     

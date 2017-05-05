@@ -24,11 +24,11 @@ class DiagnosisViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         if data.count > 0 {
-            BIL = data[0].Hour5
-            ALT = data[1].Hour5
-            ALB = data[2].Hour5
+            BAC = data[0].Hour5
+            ALB = data[1].Hour5
+            ALT = data[2].Hour5
             AST = data[3].Hour5
-            BAC = data[4].Hour5
+            BIL = data[4].Hour5
         }
         DiagnosisLabel.numberOfLines = 0
         SobrietyLabel.numberOfLines = 0
